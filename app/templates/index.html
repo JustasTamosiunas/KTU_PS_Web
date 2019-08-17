@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="h-full w-full">
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <!-- Title -->
+        <title>KTU PS 2019-2023</title>
+        <!-- TailWindCSS -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Barlow -->
+        <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+        <!-- ParticlesJS -->
+        <script src="{{ url_for('static', filename='js/particles.min.js') }}"></script>
+    </head>
+    <body class="h-full w-full flex">
+        <!-- Particles Left -->
+        <div class="h-full w-1/2" id="body_left">
+
+        </div>
+        <div class="h-full w-full flex flex-col">
+            <!-- Navigation -->
+            <div class="w-full flex">
+                <div class="w-1/2 flex justify-start">
+                    <a href="" class="navigation-item px-4 py-8">
+                        PAGRINDINIS
+                    </a>
+                </div>
+                <div class="w-1/2 flex justify-end">
+                    <a href="" class="navigation-item px-4 py-8">
+                        PROJEKTAI
+                    </a>
+                </div>
+            </div>
+            <!-- Announcement -->
+            <div class="h-full w-full flex flex-col justify-center items-center">
+                <h1>EI, TU! TAIP, TU! 👋</h1>
+                <h1>ESI KTU "PROGRAMŲ SISTEMŲ" 2019-2023 METŲ STUDENTAS?</h1>
+                <h1>NESI DAR PRISIJUNGĘS?</h1>
+                <h1>KO LAUKI?</h1>
+                <a href="{{ url_for('verify') }}">
+                    <img src="{{ url_for('static', filename='img/Discord.png') }}" height="300" width="300">
+                </a>
+                <h1>PRISIJUNK!</h1>
+            </div>
+        </div>
+        <!-- Particles Right -->
+        <div class="h-full w-1/2" id="body_right">
+
+        </div>
+    </body>
+    <!-- Scripts -->
+    <script>
+        particlesJS.load("body_left", "{{ url_for('static', filename='lib/particles.json') }}");
+        particlesJS.load("body_right", "{{ url_for('static', filename='lib/particles.json') }}");
+    </script>
+</html>

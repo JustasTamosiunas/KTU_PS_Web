@@ -1,0 +1,51 @@
+*
+{
+    font-family: 'Barlow'
+}
+
+body
+{
+    background-color: #282A2D;
+}
+
+h1
+{
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+h2
+{
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.navigation-item
+{
+    color: #FFFFFF;
+}
+
+input
+{
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #282A2D;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+input:active, input:focus
+{
+    border: 0px solid #282A2D;
+    border-bottom: 1px solid #FFFFFF;
+    outline: none
+}
+
+button
+{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #7289DA;
+    color: #FFFFFF;
+    border-radius: 5px;
+}

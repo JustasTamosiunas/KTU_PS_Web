@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="h-full w-full">
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <!-- Title -->
+        <title>KTU PS 2019-2023</title>
+        <!-- TailWindCSS -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Barlow -->
+        <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+        <!-- ParticlesJS -->
+        <script src="{{ url_for('static', filename='js/particles.min.js') }}"></script>
+    </head>
+    <body class="h-full w-full flex">
+        <!-- Particles Left -->
+        <div class="h-full w-1/2" id="body_left">
+
+        </div>
+        <!-- Form -->
+        <form action="{{ url_for('verify') }}" method="POST" class="h-full w-full flex flex-col justify-center items-center">
+            <h1>KAS LABIAUSIAI REKLAMUOJA DISCORD? 🤔</h1>
+            <h2>NEŽINAI? TU GAL PO AKMENIU GYVENI? KLAUSK FACEBOOK GRUPĖJE.</h2>
+            <input class="px-12 py-2 my-6" placeholder="ATSAKYMAS..." name="answer">
+            <button class="px-12 py-2 my-6">PRISIJUNGT</button>
+        </form>
+        <!-- Particles Right -->
+        <div class="h-full w-1/2" id="body_right">
+
+        </div>
+    </body>
+    <!-- Scripts -->
+    <script>
+        particlesJS.load("body_left", "{{ url_for('static', filename='lib/particles.json') }}");
+        particlesJS.load("body_right", "{{ url_for('static', filename='lib/particles.json') }}");
+    </script>
+</html>
