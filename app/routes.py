@@ -8,6 +8,7 @@ def index():
 @app.route('/verify', methods=['GET', 'POST'])
 def verify():
     if request.method == 'POST':
-        if request.form['answer'] == 'Amandas':
+	names = ['Amandas', 'amandas', 'Amandas Slabšys', 'Amandas Slabsys', 'amandas slabsys']
+        if request.form['answer'] in names:
             return redirect('https://discord.gg/JaHD9ZC')
     return render_template('verify.html')
