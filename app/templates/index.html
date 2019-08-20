@@ -39,9 +39,17 @@
                 <h1>ESI KTU "PROGRAMŲ SISTEMŲ" 2019-2023 METŲ STUDENTAS?</h1>
                 <h1>NESI DAR PRISIJUNGĘS?</h1>
                 <h1>KO LAUKI?</h1>
-                <a href="{{ url_for('verify') }}">
-                    <img src="{{ url_for('static', filename='img/Discord.png') }}" height="300" width="300">
-                </a>
+                <div class="flex" style="justify-content: space-between; min-width: 750px; margin-top: 20px">
+                    <a href="https://www.facebook.com/groups/1178356365676944/">
+                        <img src="{{ url_for('static', filename='img/fb.png') }}" style="max-width: 200px">
+                    </a>
+                    <a href="{{ url_for('verify') }}">
+                        <img src="{{ url_for('static', filename='img/Discord.png') }}" style="max-width: 200px">
+                    </a>
+                    <a href="https://m.me/join/AbZhG34I61B_DIJn">
+                        <img src="{{ url_for('static', filename='img/messenger.png') }}" style="max-width: 200px">
+                    </a>
+                </div>
                 <h1>PRISIJUNK!</h1>
             </div>
         </div>
